@@ -1,1 +1,1 @@
-grep "a*"
+find \( -type f -name "*z" \) -o  -name "a*" 
