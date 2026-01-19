@@ -1,0 +1,1 @@
+curl https://learn.zone01oujda.ma/assets/superhero/all.json | jq '.[] | select(.id == 1) | {name: .name, power: .powerstats.power}' | grep "\""
