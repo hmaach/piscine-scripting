@@ -1,1 +1,3 @@
-find . -type f -iregex '.*\.txt'   | cut -d / -f 2-   | sed 's/\.txt$//'
+#!/bin/sh
+
+find . -type f -iregex '.*\.txt' -printf '%f\n' | cut -d '.' -f 1
