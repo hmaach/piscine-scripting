@@ -1,1 +1,1 @@
-ls -l --time-style='+%d-%m-%Y' | sed '1d'
+ls -l --time-style='+%Y-%m-%d %H:%M' | sed '1d' | awk '{print $1, $6, $7, $8}' 
