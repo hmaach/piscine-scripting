@@ -8,4 +8,4 @@ MY_ARR=("one" "two" "three" "four" "five")
 echo "$MY_MESSAGE"
 echo "$MY_NUM"
 echo "$MY_PI"
-echo "${MY_ARR[0]}, ${MY_ARR[1]}, ${MY_ARR[2]}, ${MY_ARR[3]}, ${MY_ARR[4]}"
+echo "${MY_ARR[0]} ${MY_ARR[1]} ${MY_ARR[2]} ${MY_ARR[3]} ${MY_ARR[4]}"
