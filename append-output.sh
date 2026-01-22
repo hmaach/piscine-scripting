@@ -1,1 +1,1 @@
-cat songs.txt | grep -E '\- J' >> result.txt
+grep -E '\- J' songs.txt > result.txt
