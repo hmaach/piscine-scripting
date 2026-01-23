@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ $# -ne 2 ]]; then
   echo "Error: two numbers must be provided."
@@ -18,5 +18,4 @@ if [[ "$b" == "0" ]]; then
   exit 1
 fi
 
-echo "$a / $b" | bc
-
+echo "scale=0; $a / $b" | bc
