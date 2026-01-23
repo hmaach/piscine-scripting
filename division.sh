@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 if [[ $# -ne 2 ]]; then
   echo "Error: two numbers must be provided."
