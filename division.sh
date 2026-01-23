@@ -18,5 +18,5 @@ if [[ "$b" == "0" ]]; then
   exit 1
 fi
 
-echo "$(echo "$a / $b" | bc)"
+echo "$a / $b" | bc
 
