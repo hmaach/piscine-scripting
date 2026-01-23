@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Declare the array
 colors=("red" "blue" "green" "white" "black")
