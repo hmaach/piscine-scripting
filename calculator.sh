@@ -29,7 +29,7 @@ number_regex='^-?[0-9]+$'
 
 if ! [[ $left =~ $number_regex && $right =~ $number_regex ]]; then
     >&2 echo "Error: invalid number"
-    exit
+    exit 4
 fi
 
 case "$op" in
@@ -51,7 +51,7 @@ case "$op" in
         ;;
     *)
         >&2 echo "Error: invalid operator"
-        exit
+        exit 3
         ;;
 esac
 
