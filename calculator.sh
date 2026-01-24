@@ -18,7 +18,7 @@ do_divide() {
 
 if [ "$#" -ne 3 ]; then
     >&2 echo "Error: expect 3 arguments"
-    exit
+    exit 1
 fi
 
 left="$1"
