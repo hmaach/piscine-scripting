@@ -45,7 +45,7 @@ case "$op" in
     "/")
         if [ "$right" -eq 0 ]; then
             >&2 echo "Error: division by 0"
-            exit
+            exit 2
         fi
         do_divide "$left" "$right"
         ;;
