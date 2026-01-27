@@ -1,11 +1,20 @@
 def clean_list(shopping_list):
-    if not isinstance(shopping_list, list):
-        raise ValueError("Input must be a list.")
+    if len(shopping_list) == 0:
+        return shopping_list
 
-    cleaned_list = []
-    for item in shopping_list:
-        if item is not None and item not in cleaned_list:
-            cleaned_list.append(item)
+    result = []
+    i = 1
+    milk_found = False
 
-    return cleaned_list
+    for elem in shopping_list:
+        if elem == "milk":
+            milk_found = True
 
+        cleaned = str(i) + "/ " + elem.strip().capitalize()
+        result.append(cleaned)
+        i += 1
+
+    if milk_found != True:
+        result.append(str(i) + "/ Milk")
+
+    return result
