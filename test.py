@@ -1,3 +1,3 @@
 import clean_the_list
-shopping_list = ['tomatoes', 'pastas', 'milk', 'salt']
+shopping_list = ['tomatoes', 'pastas', 'salt']
 print(clean_the_list.clean_list(shopping_list))
