@@ -1,9 +1,11 @@
-import string
+import re
 
 def tokenize(sentence):
-    result = []
+    sentence = sentence.lower()
     
-    translator = str.maketrans(string.punctuation, " " * len(string.punctuation))
-    s = sentence.lower().translate(translator) 
+    sentence = re.sub(r"[^a-z0-9\s]", " ", sentence)
+    
+    tokens = sentence.split()
+    
+    return tokens
 
-    return s.split()
